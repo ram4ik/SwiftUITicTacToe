@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		1D33EDFE264E49CE00312A2A /* SwiftUITicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EDFD264E49CE00312A2A /* SwiftUITicTacToeApp.swift */; };
-		1D33EE00264E49CE00312A2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EDFF264E49CE00312A2A /* ContentView.swift */; };
+		1D33EE00264E49CE00312A2A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EDFF264E49CE00312A2A /* GameView.swift */; };
 		1D33EE02264E49D300312A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D33EE01264E49D300312A2A /* Assets.xcassets */; };
 		1D33EE05264E49D300312A2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D33EE04264E49D300312A2A /* Preview Assets.xcassets */; };
 		1D33EE0D264E5AED00312A2A /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EE0C264E5AED00312A2A /* Alerts.swift */; };
+		1D33EE0F264E62FC00312A2A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EE0E264E62FC00312A2A /* GameViewModel.swift */; };
+		1D33EE12264E678F00312A2A /* GameSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EE11264E678F00312A2A /* GameSquareView.swift */; };
+		1D33EE14264E67BD00312A2A /* PlayerIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EE13264E67BD00312A2A /* PlayerIndicator.swift */; };
+		1D33EE18264E681100312A2A /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EE17264E681100312A2A /* Move.swift */; };
+		1D33EE1A264E683C00312A2A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EE19264E683C00312A2A /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D33EDFA264E49CE00312A2A /* SwiftUITicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D33EDFD264E49CE00312A2A /* SwiftUITicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITicTacToeApp.swift; sourceTree = "<group>"; };
-		1D33EDFF264E49CE00312A2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1D33EDFF264E49CE00312A2A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		1D33EE01264E49D300312A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D33EE04264E49D300312A2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D33EE06264E49D300312A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D33EE0C264E5AED00312A2A /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		1D33EE0E264E62FC00312A2A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		1D33EE11264E678F00312A2A /* GameSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquareView.swift; sourceTree = "<group>"; };
+		1D33EE13264E67BD00312A2A /* PlayerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerIndicator.swift; sourceTree = "<group>"; };
+		1D33EE17264E681100312A2A /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		1D33EE19264E683C00312A2A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,14 @@
 		1D33EDFC264E49CE00312A2A /* SwiftUITicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				1D33EE16264E67FD00312A2A /* Model */,
+				1D33EE15264E67DD00312A2A /* ViewModel */,
+				1D33EE10264E677A00312A2A /* CustomViews */,
 				1D33EDFD264E49CE00312A2A /* SwiftUITicTacToeApp.swift */,
-				1D33EDFF264E49CE00312A2A /* ContentView.swift */,
+				1D33EDFF264E49CE00312A2A /* GameView.swift */,
 				1D33EE01264E49D300312A2A /* Assets.xcassets */,
 				1D33EE06264E49D300312A2A /* Info.plist */,
 				1D33EE03264E49D300312A2A /* Preview Content */,
-				1D33EE0C264E5AED00312A2A /* Alerts.swift */,
 			);
 			path = SwiftUITicTacToe;
 			sourceTree = "<group>";
@@ -70,6 +82,33 @@
 				1D33EE04264E49D300312A2A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D33EE10264E677A00312A2A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1D33EE11264E678F00312A2A /* GameSquareView.swift */,
+				1D33EE13264E67BD00312A2A /* PlayerIndicator.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		1D33EE15264E67DD00312A2A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1D33EE0E264E62FC00312A2A /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1D33EE16264E67FD00312A2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D33EE0C264E5AED00312A2A /* Alerts.swift */,
+				1D33EE17264E681100312A2A /* Move.swift */,
+				1D33EE19264E683C00312A2A /* Player.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D33EE00264E49CE00312A2A /* ContentView.swift in Sources */,
+				1D33EE18264E681100312A2A /* Move.swift in Sources */,
+				1D33EE0F264E62FC00312A2A /* GameViewModel.swift in Sources */,
+				1D33EE00264E49CE00312A2A /* GameView.swift in Sources */,
+				1D33EE14264E67BD00312A2A /* PlayerIndicator.swift in Sources */,
+				1D33EE1A264E683C00312A2A /* Player.swift in Sources */,
 				1D33EE0D264E5AED00312A2A /* Alerts.swift in Sources */,
 				1D33EDFE264E49CE00312A2A /* SwiftUITicTacToeApp.swift in Sources */,
+				1D33EE12264E678F00312A2A /* GameSquareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
